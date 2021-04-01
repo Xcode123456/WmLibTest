@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'Net_Example' do
   pod 'Net', :path => '../'
+  pod 'Component', :path => '../../../Lib/Component'
 
   target 'Net_Tests' do
     inherit! :search_paths

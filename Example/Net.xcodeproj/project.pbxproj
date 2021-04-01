@@ -57,14 +57,14 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		60099F88967A888D7FEAA6D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		60099F88967A888D7FEAA6D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		617F53CE9DFC62A4D0D8C727 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		617F53CE9DFC62A4D0D8C727 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		63944498CAAACF48478B1B7F /* Pods-Net_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Net_Example.debug.xcconfig"; path = "Target Support Files/Pods-Net_Example/Pods-Net_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		67BF9050DF91B12D88BD2895 /* Pods_Net_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Net_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87EEDA447F20689D7819E424 /* Net.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = Net.podspec; path = ../Net.podspec; sourceTree = "<group>"; };
+		87EEDA447F20689D7819E424 /* Net.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Net.podspec; path = ../Net.podspec; sourceTree = "<group>"; };
 		B612C76603B1691E9CB8DB14 /* Pods-Net_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Net_Tests.release.xcconfig"; path = "Target Support Files/Pods-Net_Tests/Pods-Net_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2C42A210759E7421CB570A5 /* Pods-Net_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Net_Example.release.xcconfig"; path = "Target Support Files/Pods-Net_Example/Pods-Net_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				14C0919E1B8DAD68289807EF /* Pods-Net_Tests.debug.xcconfig */,
 				B612C76603B1691E9CB8DB14 /* Pods-Net_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Net_Example/Pods-Net_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Component/Component.framework",
 				"${BUILT_PRODUCTS_DIR}/Net/Net.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Component.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Net.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

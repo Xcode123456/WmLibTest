@@ -1,0 +1,22 @@
+{
+  "name": "Component",
+  "version": "0.1.0",
+  "summary": "01 - Component.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Xcode123456/WMHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "522053506@qq.com": "522053506@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Xcode123456/WMHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Component/Classes/**/*"
+}
